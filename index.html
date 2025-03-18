@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand">Forms App</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#personal">Personal Info</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form-container" id="login">
+        <h2>Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="register">
+        <h2>Register</h2>
+        <form>
+            <div class="form-group">
+                <label for="reg-name">Full Name:</label>
+                <input type="text" id="reg-name" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-confirm">Confirm Password:</label>
+                <input type="password" id="reg-confirm" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="personal">
+        <h2>Personal Information</h2>
+        <form>
+            <div class="form-group">
+                <label for="personal-name">Full Name:</label>
+                <input type="text" id="personal-name" required>
+            </div>
+            <div class="form-group">
+                <label for="personal-dob">Date of Birth:</label>
+                <input type="date" id="personal-dob" required>
+            </div>
+            <div class="form-group">
+                <label for="personal-phone">Phone:</label>
+                <input type="tel" id="personal-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="personal-address">Address:</label>
+                <textarea id="personal-address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="personal-nationality">Nationality:</label>
+                <input type="text" id="personal-nationality" required>
+            </div>
+            <div class="form-group">
+                <label for="personal-country">Country:</label>
+                <select id="personal-country" required>
+                    <option value="">Select Country</option>
+                    <option value="US">Rwanda</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                    <!-- Add more countries as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="personal-scan">Scan Code/ID:</label>
+                <input type="text" id="personal-scan" required>
+            </div>
+            <div class="form-group">
+                <label>Marital Status:</label>
+                <div class="radio-group">
+                    <input type="radio" id="single" name="marital-status" value="single" required>
+                    <label for="single">Single</label>
+                    <input type="radio" id="married" name="marital-status" value="married">
+                    <label for="married">Married</label>
+                </div>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
